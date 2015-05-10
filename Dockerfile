@@ -14,6 +14,6 @@ RUN \
   cd /src && \
   npm install --production
 
-EXPOSE 2368
+EXPOSE 80
 
 CMD ["npm", "start"]
