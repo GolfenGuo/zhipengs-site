@@ -1,6 +1,8 @@
 
 FROM ubuntu:14.04
 
+ENV NODE_ENV production
+
 RUN \
   apt-get -y install curl && \
   curl -sL https://deb.nodesource.com/setup | bash - && \
@@ -14,4 +16,4 @@ RUN \
 
 EXPOSE 2368
 
-CMD ["npm", "start", "--production"]
+CMD ["npm", "start"]
